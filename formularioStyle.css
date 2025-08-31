@@ -1,0 +1,88 @@
+body {
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    width: 100%;
+    height: 100vh;
+    margin: 0; /*nos deshacemos de la barra horizontal*/
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1, p {
+    text-align: center;
+    margin: 1em auto;
+}
+
+form {
+    margin: 0 auto; /*centramos el form*/
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding: 0 0 2em 0; /*le damos un padding en la parte inferior al form 
+    para que el boton de envio no este pegado a su elemento padre (body)*/
+}
+
+fieldset {
+    border: none; /*eliminamos los bordes*/
+    border-bottom: 3px solid #3b3b4f;
+    /*orden de valores del padding con 4 valores: padding-top(superior) padding-right(derecho)
+    padding-botton(inferior) padding-left(izquierdo)*/
+    /*padding: 2rem 0px 2rem 0px;*/
+    /*el padding con 2 valores se interpreta asi: el 1er valor es para los rellenos verticales
+    (superior e inferior) y el 2do valor para los rellenos horizontales(derecho e izquierdo)*/
+    padding: 2rem 0;
+}
+
+/*esto apunta al ultimo elmento fieldset*/
+fieldset:last-of-type {
+    border-bottom: none; /*se elimina el borde inferior*/
+}
+
+/*hacemos que los elementos label sean de bloque con una separacion entre ellos de 0.5rem*/
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea, select {
+    width: 100%; /*hacemos que los elementos seleccionados ocupen todo el ancho de sus elementos padre*/
+    margin: 10px 0 0 0; /*agregamos un margen de 10px en la parte superior y el resto 0*/
+    min-height: 2em; /*agrandamos el tamaño de los inputs, textarea y select*/
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff; /*cambiamos el color a las entradas(inputs) y textarea*/
+}
+
+.inline {
+    width: unset; /*con unset reestablecemos la propiedad a su valor heredado (inicial)*/
+    margin: 0 0.5em 0 0; /*margin: superior derecha inferior izquierda*/
+    vertical-align: middle; /*establecemos el alineado vertical de los input de tipo radio con sus labels*/
+}
+
+/*usamos un selector de atributos, el cual selecciona un elemento en especifico
+basado en el valor del atributo dado. Ejem: input[name="password"]*/
+/*damos estilos al boton de envio*/
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    /*centramos el boton de envio, dandole un margen de 1em al relleno vertical,
+    y un margen auto al relleno horizontal*/
+    margin: 1em auto;
+    min-width: 300px;
+    height: 2em; /*tamaño del boton de envio*/
+    font-size: 1.1rem; /*tamaño de letra*/
+    background-color: #3b3b4f;
+    border-color: white;
+}
+
+/*usamos otro selector de atributo, para darle un padding al input de tipo file*/
+input[type="file"]{
+    padding: 1px 2px;
+}
+
+a {
+    color: #dedee6;
+}
