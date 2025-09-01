@@ -4,9 +4,10 @@ Este proyecto es un formulario de registro sencillo, creado con **HTML** y **CSS
 
 ---
 
-### Enlace en vivo !
+### 🔗 Enlace en Vivo
 
-Puedes visitar la pagina en el siguiente enlace: https://magicdev-rc.github.io/formulario-registro/
+¡Puedes ver el resultado del proyecto en este enlace!
+[https://magicdev-rc.github.io/formulario-registro/](https://magicdev-rc.github.io/formulario-registro/)
 
 ---
 
